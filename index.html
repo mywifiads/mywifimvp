@@ -9,6 +9,7 @@
 <body>
 
     <h1>📶 Free Wi-Fi</h1>
+    <h2 id="shopName">Welcome</h2>
 
     <p>Watch a short advertisement to get free Wi-Fi access.</p>
 <button onclick="showAd()">🎬 Watch Ad & Get Wi-Fi</button>
@@ -17,11 +18,12 @@ function showAd() {
     alert("🎬 Advertisement started!");
 
     setTimeout(function() {
-       alert("✅ Wi-Fi Access Granted!\n\n📶 Network: " + (shop || "MyWiFi_Guest") + "\n🔑 Password: 12345678");
+       alert("✅ Wi-Fi Access Granted!\n\n📶 Network: " + (shop || "李忠义") + "\n🔑 Password: BPY2262");
     }, 3000);
 }
         const params = new URLSearchParams(window.location.search);
 const shop = params.get("shop");
+        document.getElementById("shopName").textContent = shop ? "Welcome to " + shop : "Welcome";
 
 console.log("Shop ID:", shop);
 </script>
