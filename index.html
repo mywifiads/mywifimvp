@@ -17,7 +17,7 @@ function showAd() {
     alert("🎬 Advertisement started!");
 
     setTimeout(function() {
-       alert("✅ Wi-Fi Access Granted!\n\n📶 Network: MyWiFi_Guest\n🔑 Password: 12345678");
+       alert("✅ Wi-Fi Access Granted!\n\n📶 Network: " + (shop || "MyWiFi_Guest") + "\n🔑 Password: 12345678");
     }, 3000);
 }
         const params = new URLSearchParams(window.location.search);
