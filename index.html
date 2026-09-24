@@ -20,6 +20,10 @@ function showAd() {
        alert("✅ Wi-Fi Access Granted!\n\n📶 Network: MyWiFi_Guest\n🔑 Password: 12345678");
     }, 3000);
 }
+        const params = new URLSearchParams(window.location.search);
+const shop = params.get("shop");
+
+console.log("Shop ID:", shop);
 </script>
 </body>
 </html>
